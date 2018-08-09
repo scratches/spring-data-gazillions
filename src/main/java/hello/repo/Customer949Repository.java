@@ -1,0 +1,12 @@
+package hello.repo;
+
+import hello.model.Customer949;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface Customer949Repository extends CrudRepository<Customer949, Long> {
+
+    List<Customer949> findByLastName(String lastName);
+}
